@@ -1,0 +1,12 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>دليل الزلفي</title><link rel="stylesheet" href="../style.css"><link rel="icon" href="../icon.png">
+<style>.go{display:flex;flex-direction:column;gap:10px;margin-top:14px}.btn{display:block;text-align:center;text-decoration:none;font-weight:900;padding:13px;border-radius:16px;background:var(--p);color:#fff}.btn.o{background:#fff;color:var(--p);border:1px solid var(--b)}</style></head>
+<body><header><img src="../logo_white.png" alt="دليل الزلفي"><h1>دليل الزلفي</h1><p>كل الزلفي بين يديك</p></header>
+<main><div class="card"><h2>جارٍ فتح التطبيق…</h2><p id="m">إذا كان التطبيق مثبّتاً سيفتح تلقائياً. وإلا حمّله من الزر أدناه ثم افتح الرابط مرة أخرى.</p>
+<div class="go"><a class="btn" id="open" href="#">افتح في التطبيق</a><a class="btn o" href="https://apps.apple.com/app/id6829208007">تحميل من App Store</a></div></div></main>
+<script>
+var to=new URLSearchParams(location.search).get('to')||'/directory';
+var app='zulfiguide:/'+(to.charAt(0)==='/'?to:'/'+to);
+document.getElementById('open').href=app;
+setTimeout(function(){location.href=app},300);
+</script></body></html>
